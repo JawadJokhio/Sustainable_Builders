@@ -1,0 +1,49 @@
+.sustainability-page {
+  padding: 120px 0;
+  background: var(--bg-main);
+}
+
+.sustainability-page h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sustainability-intro {
+  max-width: 800px;
+  margin: 0 auto 70px;
+  text-align: center;
+  font-size: 17px;
+  color: var(--text-muted);
+}
+
+.sustainability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.sustainability-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  padding: 40px 30px;
+  border-radius: 14px;
+}
+
+.sustainability-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--accent-green);
+}
+
+.sustainability-card p {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sustainability-grid {
+    grid-template-columns: 1fr;
+  }
+}

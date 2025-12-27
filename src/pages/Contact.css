@@ -1,0 +1,140 @@
+.contact-page {
+  padding: 120px 0;
+  background: var(--bg-secondary);
+}
+
+.contact-page h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin: 0 auto 70px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info {
+  background: var(--bg-main);
+  border: 1px solid var(--border-subtle);
+  padding: 40px;
+  border-radius: 14px;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: var(--accent-green);
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: var(--accent-green);
+  color: #000;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.contact-form {
+  background: var(--bg-main);
+  border: 1px solid var(--border-subtle);
+  padding: 40px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  border-radius: 6px;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  background: var(--accent-green);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-box {
+  background: #0e1628;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  border: 1px solid var(--border-subtle);
+}
+
+.modal-box h2 {
+  color: var(--accent-green);
+  margin-bottom: 10px;
+}
+
+.modal-box button {
+  margin-top: 15px;
+  padding: 8px 18px;
+  background: var(--accent-green);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.whatsapp-box {
+  margin-top: 20px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 6px;
+  background: #25d366;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  opacity: 0.9;
+  color: white;
+}
+.contact-form button:hover {
+  opacity: 0.9;
+  /* color: white; */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
