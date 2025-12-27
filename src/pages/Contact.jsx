@@ -53,7 +53,7 @@ const Contact = () => {
             <div className="whatsapp-box">
               <p>💬 WhatsApp:</p>
               <a
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                href={`https://wa.me/${+923368317139}?text=${encodeURIComponent(
                   whatsappMessage
                 )}`}
                 target="_blank"
